@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Casamento de Maria & João</title>
+</head>
+<body>
+    <div class="container">
+        <div class="couple-photo" role="img" aria-label="Foto dos noivos Maria e João em um momento romântico"></div>
+        
+        <div class="event-details">
+            <h1>Maria & João</h1>
+            <p>Celebrando Nosso Amor</p>
+            
+            <div class="countdown" id="countdown" aria-live="polite">
+                Contagem regressiva para o grande dia
+            </div>
+            
+            <div class="floral-details">
+                <h2>Detalhes do Evento</h2>
+                <p>Data: 15 de Setembro de 2025</p>
+                <p>Local: Igreja Matriz, Centro</p>
+                <p>Recepção: Salão Elegance</p>
+                
+                <button class="confirm-button" id="confirmPresenceBtn" aria-label="Confirmar Presença">
+                    Confirmar Presença
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- confirmação de presença -->
+    <div id="presenceModal" class="modal">
+        <div class="modal-content">
+            <h2>Confirmação de Presença</h2>
+            <form id="presenceForm">
+                <input type="text" id="name" placeholder="Seu Nome Completo" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <select id="guests" required>
+                    <option value="">Número de Convidados</option>
+                    <option value="1">1 Pessoa</option>
+                    <option value="2">2 Pessoas</option>
+                    <option value="3">3 Pessoas</option>
+                    <option value="4">4 Pessoas</option>
+                </select>
+                <div class="modal-buttons">
+                    <button type="button" class="modal-cancel" id="cancelBtn">Cancelar</button>
+                    <button type="submit" class="modal-confirm">Confirmar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
